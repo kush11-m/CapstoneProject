@@ -3,7 +3,7 @@ header{
     height: 80px;
     display: flex;
     /* padding: 16px 0px 16px 0px; */
-    font-family: DotGothic16;
+    font-family: "DotGothic16";
 }
 
 #header-hr {
@@ -16,13 +16,15 @@ header{
 .logo{
     font-size: 42px;
     font-weight: 400;
-    padding: 4px 758px 16px 48px;
+    margin: 4px 758px 16px 48px;
+    cursor: pointer;
 }
 
 .pagelinks{
     font-size: 28px;
     padding-left: 32px;
     padding: 16px 0px 16px 32px;
+    cursor: pointer;
 }
 
 .body-top{
@@ -31,7 +33,7 @@ header{
 
 .heading{
     font-size: 120px;
-    font-family: DotGothic16;
+    font-family: "DotGothic16", sans-serif;
     text-align: center;
 }
 
@@ -50,10 +52,18 @@ header{
     font-variation-settings:
       "wdth" 100;
   }
+
+.archivo-narrow-narrow {
+  font-family: "Archivo Narrow", serif;
+  font-optical-sizing: auto;
+  font-weight: 500px;
+  font-style: normal;
+}
   
   #yug{
     justify-content: center;
     padding-left: 48px;
+    margin-bottom: 96px;
   }
 
   .body-grid{
@@ -64,20 +74,172 @@ header{
     column-gap: 80px;
     row-gap: 48px;
     font-family: "Archivo";
+    font-weight: 400;
   }
 
+  .photu{
+    filter: grayscale(100%);
+    cursor: pointer;
+    transition: all linear 0.3s;
+    transform: scale(1);
+}
+
+.photu:hover{
+    filter: grayscale(0%) !important;
+    transform: scale(1.05);
+}
+
+  .end-part{
+    display: grid;
+    grid-template-rows: 348px 180px 700px;
+    width: 100%;
+    /* justify-content: start;
+    align-content: center; */
+  }
+  
   .about-section{
-    display: flex;
-    width: 60vw;
+    width: 900px;
+    height: 156px;
     font-family: DotGothic16;
     font-size: 48px;
     text-align: center;
     line-height: 52px;
+    padding: 96px 222px 96px 302px;
+    /* display: grid;
+    align-content: center;
+    justify-content: center; */
     /* margin: auto; */
-    padding: 96px 222px 96px 222px;
-  }
-
-  .contact-me{
-    font-family: DotGothic16;
+    /* padding: 96px 222px 0px 222px; */
     
   }
+
+   .contact-me{
+     /* display: grid;
+     grid-template-rows: 32px 28px;
+     row-gap: 24px;
+     align-content: center;
+     justify-content: center; */
+     width: 50%;
+     height: 180px;
+     padding-left: 0px;
+     margin-left: 400px;
+     padding-top: 48px;
+     padding-bottom: 48px;
+
+    
+   }
+
+  .contact-me .contact{
+    font-family: DotGothic16;
+    size: 28px;
+    margin-bottom: 24px;
+    /* justify-content: start; */
+  }
+
+  .contact-form{
+    width: 100%;
+    height: 276px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-bottom: 224px;
+}
+.contact-form form{
+    height: 404px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+}
+.contact-form h1{
+    width: 512px;
+    height: 32px;
+    font-family: "DotGothic16";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -1%;
+    /* color:rgba(222, 222, 222, 1); */
+    text-align: center;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 56px 56px 56px 56px 56px;
+    column-gap: 12px;
+}
+
+.contact-form .box{
+    height: 64px;
+    text-align: center;
+    align-content: center;
+    border: 1px solid;
+    border-radius: 8px;
+}
+
+
+.submit-btn{
+   width: 400px;
+   height: 36px; 
+   padding-top: 8px;
+   padding-bottom: 8px;
+   gap: 12px;
+}
+
+form input[type="submit"]{
+    height: 36px;
+    width: 400px;
+    padding: 8px 16px;
+    background-color: #2419F3;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: "Archivo Narrow";
+    cursor: pointer;
+    border: none;
+}
+
+
+.skip-btn{
+    width: 400px;
+    height: 52px; 
+ }
+
+ footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 144px;
+    margin-bottom: 24px;
+    padding-left: 48px;
+    padding-right: 48px;
+    align-items: center;
+ }
+
+ footer button{
+    border-radius: 8px;
+    padding: 12px 24px 12px 24px;
+    font-family: "Archivo Narrow";
+    font-size: 20px;
+    background-color: white;
+    border: 1px solid;
+    cursor: pointer;
+ }
+
+@media screen and (max-width:600px){
+
+  .heading{
+    /* color: blueviolet; */
+    font-size: 6px;
+    font-family: "DotGothic16", sans-serif;
+    text-align: center;
+}
+  
+}
